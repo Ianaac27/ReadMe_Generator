@@ -17,74 +17,68 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  `;
-// ${generateDescription(data.description)}
 
-// ${generateTableOfContents(data.tableOfContents)}
+${generateDescription(data.description)}
 
-// ${generateInstallation(data.installation)}
+${generateTableOfContents(data.tableOfContents)}
+${generateInstallation(data.installation)}
+${generateUsage(data.usage)}
+${generateLicense(data.license)}
+${generateContributing(data.contributing)}
+${generateTests(data.tests)}
+${generateQuestions(data.questions)}
 
-// ${generateUsage(data.usage)}
-
-// ${generateLicense(data.license)}
-
-// ${generateContributing(data.contributing)}
-
-// ${generateTests(data.tests)}
-
-// ${generateQuestions(data.questions)}
-
-// `;
+`;
 }
 
 //Functions to generate individual markdown content
-// function generateDescription( description ) {
-//   return `## Description
+function generateDescription( description ) {
+  return `## Description
 
-//   ${description}`;
-// }
+  ${description}`;
+}
 
-// function generateTableOfContents( tableOfContents ) {
-//   return `## Table of Contents
+function generateTableOfContents( tableOfContents ) {
+  return `## Table of Contents
 
-//   ${tableOfContents}`;
-// }
+  ${tableOfContents}`;
+}
 
-// function generateInstallation( installation ) {
-//   return `* [Installation](#installation)
+function generateInstallation( installation ) {
+  return `* [Installation](#installation)
 
-//   ${installation}`;
-// }
+  ${installation}`;
+}
 
-// function generateUsage( usage ) {
-//   return `* [Usage](#usage)
+function generateUsage( usage ) {
+  return `* [Usage](#usage)
 
-//   ${usage}`;
-// }
+  ${usage}`;
+}
 
-// function generateLicense( license ) {
-//   return `* [License](#license)
+function generateLicense( license ) {
+  return `* [License](#license)
 
-//   ${license}`;
-// }
+  ${license}`;
+}
 
-// function generateContributing( contributing ) {
-//   return `* [Contributing](#contributing)
+function generateContributing( contributing ) {
+  return `* [Contributing](#contributing)
 
-//   ${contributing}`;
-// }
+  ${contributing}`;
+}
 
-// function generateTests( tests ) {
-//   return `* [Tests](#tests)
+function generateTests( tests ) {
+  return `* [Tests](#tests)
 
-//   ${tests}`;
-// }
+  ${tests}`;
+}
 
-// function generateQuestions( questions ) {
-//   return `[Questions](#questions)
+function generateQuestions( questions ) {
+  return `[Questions](#questions)
 
-//   ${questions}`;
-// }
+  ${questions}`;
+}
 
 // console.log(generateMarkdown({
 //   title: "Testing",
