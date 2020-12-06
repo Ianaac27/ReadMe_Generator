@@ -21,11 +21,17 @@ function generateMarkdown(data) {
 ${generateDescription(data.description)}
 
 ${generateTableOfContents(data.tableOfContents)}
+
 ${generateInstallation(data.installation)}
+
 ${generateUsage(data.usage)}
+
 ${generateLicense(data.license)}
+
 ${generateContributing(data.contributing)}
+
 ${generateTests(data.tests)}
+
 ${generateQuestions(data.questions)}
 
 `;
@@ -41,43 +47,55 @@ function generateDescription( description ) {
 function generateTableOfContents( tableOfContents ) {
   return `## Table of Contents
 
-  ${tableOfContents}`;
+  * [Installation](#installation)
+
+  * [Usage](#usage)
+
+  * [License](#license)
+
+  * [Contributing](#contributing)
+
+  * [Tests](#tests)
+
+  * [Questions](#questions)`;
 }
 
 function generateInstallation( installation ) {
-  return `* [Installation](#installation)
+  return `## Installation
 
   ${installation}`;
 }
 
 function generateUsage( usage ) {
-  return `* [Usage](#usage)
+  return `## Usage
 
   ${usage}`;
 }
 
 function generateLicense( license ) {
-  return `* [License](#license)
+  return `## License
 
   ${license}`;
 }
 
 function generateContributing( contributing ) {
-  return `* [Contributing](#contributing)
+  return `## Contributing
 
   ${contributing}`;
 }
 
 function generateTests( tests ) {
-  return `* [Tests](#tests)
+  return `## Tests
 
   ${tests}`;
 }
 
 function generateQuestions( questions ) {
-  return `[Questions](#questions)
+  return `## Questions
 
-  ${questions}`;
+  If you have any questions, please refer to my contact information below.
+
+  [GitHub: ${questions}](https://www.github.com/${questions})`;
 }
 
 // console.log(generateMarkdown({

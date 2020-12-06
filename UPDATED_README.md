@@ -1,34 +1,48 @@
-# README Generator
+# My project
 
 ## Description
 
-  This is an application that generates README.md files. This is processed by using prompts within node, which is done through the npm inquirer.
+  This is my Project
 
 ## Table of Contents
 
-  Needs works
+  * [Installation](#installation)
 
-* [Installation](#installation)
+  * [Usage](#usage)
 
-  You need node and a npm called inquirer.
+  * [License](#license)
 
-* [Usage](#usage)
+  * [Contributing](#contributing)
 
-  access node, answer prompt questions.
+  * [Tests](#tests)
 
-* [License](#license)
-
-  IFC
-
-* [Contributing](#contributing)
-
-  IFC
-
-* [Tests](#tests)
+  * [Questions](#questions)
 
   undefined
 
-[Questions](#questions)
+## Installation
+
+  You install like this
+
+## Usage
+
+  Like this
+
+## License
+
+  JK
+
+## Contributing
+
+  Me
+
+## Tests
 
   undefined
+
+## Questions
+
+  If you have any questions, please refer to my contact information below.
+
+  [GitHub: Ianaac27](https://www.github.com/Ianaac27)
 
