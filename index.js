@@ -69,7 +69,7 @@ inquirer
     .then(data => {
         console.log(data);
         data.title;
-        writeToFile("UPDATED_README.md", data);
+        writeToFile("README.md", data);
  });
 }
 
