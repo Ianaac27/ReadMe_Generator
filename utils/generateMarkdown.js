@@ -1,20 +1,4 @@
-// GIVEN a command-line application that accepts user input
-// WHEN I am prompted for information about my application repository
-// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-// WHEN I enter my project title
-// THEN this is displayed as the title of the README
-// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-// WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-// WHEN I enter my GitHub username
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-// WHEN I enter my email address
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README
-
-// function to generate markdown for README
+//=============================================== function to generate markdown for README ====================================================
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -35,12 +19,13 @@ ${generateTests(data.tests)}
 ${generateQuestions(data.questions)}
 
 ${generateGithub(data.github)}
+
 ${generateEmail(data.email)}
 
 `;
 }
 
-//Functions to generate individual markdown content
+//========================================= Functions to generate individual markdown content ===========================================
 function generateDescription( description ) {
   return `## Description
 
@@ -76,9 +61,61 @@ function generateUsage( usage ) {
 }
 
 function generateLicense( license ) {
+
+if ( license == 'Apache')
   return `## License
+  [![License]${badge.Apache}
 
   ${license}`;
+
+else if ( license == 'BSD' )   
+  return `## License
+  [![License]${badge.BSD}
+
+  ${license}`;
+
+else if ( license == 'CC' )   
+  return `## License
+  [![License]${badge.CC}
+
+  ${license}`;
+
+else if ( license == 'EPL' )   
+  return `## License
+  [![License]${badge.EPL}
+
+  ${license}`;
+
+else if ( license == 'GNU' )   
+  return `## License
+  [![License]${badge.GNU}
+
+  ${license}`;
+
+else if ( license == 'IBM' )   
+  return `## License
+  [![License]${badge.IBM}
+
+  ${license}`;
+
+else if ( license == 'MIT' )   
+  return `## License
+  [![License]${badge.MIT}
+
+  ${license}`;
+
+else if ( license == 'MPL' )   
+  return `## License
+  [![License]${badge.MPL}
+
+  ${license}`;
+
+else if ( license == 'Zlib' )   
+  return `## License
+  [![License]${badge.Zlib}
+
+  ${license}`;
+
 }
 
 function generateContributing( contributing ) {
@@ -107,18 +144,20 @@ function generateEmail( email ) {
   return `Email: ${email}`;
 }
 
-// console.log(generateMarkdown({
-//   title: "Testing",
-//   description: "Testing Description",
-//   tableOfContents: "123",
-//   installation: "asf",
-//   usage: "rew",
-//   license: "dsa",
-//   contributing: "456",
-//   tests: "897",
-//   questions: "321",
-// }));
+//==================================================== Badges =====================================================
+const badge = {
+  'Apache' : '(https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+  'BSD' : '(https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
+  'CC' : '(https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)',
+  'EPL' : '(https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
+  'GNU' : '(https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)',
+  'IBM' : '(https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)',
+  'MIT' : '(https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+  'MPL' : '(https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+  'Zlib' : '(https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)',
+}
 
+//======================================================== Export Generate Markdown =============================================================
 module.exports = generateMarkdown;
 
 

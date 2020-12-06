@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+//==================================================== array of questions for user =============================================
 const questions = [
     {
         type: "input",
@@ -25,9 +25,10 @@ const questions = [
         name: "usage",
       },
       {
-        type: "input",
+        type: "list",
         message: "What license does our project contain?",
         name: "license",
+        choices: ["Apache", "BSD", "CC", "EPL", "GNU", "IBM", "MIT", "MPL", "Zlib"]
       },
       {
         type: "input",
@@ -51,7 +52,7 @@ const questions = [
       },  
   ];
 
-// function to write README file
+//==================================================== function to write README file =================================================
  function writeToFile(fileName, data) {
     const content = generateMarkdown(data);
      
@@ -61,7 +62,7 @@ const questions = [
     })
  }
 
-// function to initialize program
+//==================================================== function to initialize program ===============================================
 function init() {   
 inquirer
     .prompt(questions)
@@ -72,5 +73,5 @@ inquirer
  });
 }
 
-// function call to initialize program
+//==================================================== function call to initialize program ===========================================
 init();
