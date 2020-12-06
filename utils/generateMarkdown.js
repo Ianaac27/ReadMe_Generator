@@ -34,6 +34,9 @@ ${generateTests(data.tests)}
 
 ${generateQuestions(data.questions)}
 
+${generateGithub(data.github)}
+${generateEmail(data.email)}
+
 `;
 }
 
@@ -93,9 +96,15 @@ function generateTests( tests ) {
 function generateQuestions( questions ) {
   return `## Questions
 
-  If you have any questions, please refer to my contact information below.
+  If you have any questions, please refer to my contact information below.`;
+}
 
-  [GitHub: ${questions}](https://www.github.com/${questions})`;
+function generateGithub( github ) {
+  return `[GitHub: ${github}](https://www.github.com/${github})`;
+}
+
+function generateEmail( email ) {
+  return `Email: ${email}`;
 }
 
 // console.log(generateMarkdown({

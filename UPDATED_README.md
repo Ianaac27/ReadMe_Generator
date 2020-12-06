@@ -1,8 +1,8 @@
-# My project
+# This is my project
 
 ## Description
 
-  This is my Project
+  This is my project
 
 ## Table of Contents
 
@@ -18,11 +18,9 @@
 
   * [Questions](#questions)
 
-  undefined
-
 ## Installation
 
-  You install like this
+  Like this
 
 ## Usage
 
@@ -30,7 +28,7 @@
 
 ## License
 
-  JK
+  LAK
 
 ## Contributing
 
@@ -44,5 +42,6 @@
 
   If you have any questions, please refer to my contact information below.
 
-  [GitHub: Ianaac27](https://www.github.com/Ianaac27)
+[GitHub: Ianaac27](https://www.github.com/Ianaac27)
+Email: ian.fleshmancooper@gmail.com
 
