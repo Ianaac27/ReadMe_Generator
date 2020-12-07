@@ -33,7 +33,7 @@ Ianaac27
 
 ## Tests
 
-![README Walkthrough](assets/README_Walkthrough.webm)
+[![README Walkthrough](assets/Walkthrough_screenshot.png)](https://drive.google.com/file/d/1RBXLx5R22cEjfbSk_yH26QOU5PRhq_6T/view)
 
 ## Questions
 
