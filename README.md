@@ -33,9 +33,7 @@ Ianaac27
 
 ## Tests
 
-<video width="320" height="240" controls>
-  <source src="assets/README_Walkthrough.webm" type="video/mp4">
-</video>
+![README Walkthrough](assets/README_Walkthrough.webm
 
 ## Questions
 
